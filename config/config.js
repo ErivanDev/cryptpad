@@ -46,7 +46,7 @@ module.exports = {
  *  cryptpad/docs/example.nginx.conf (see the $main_domain variable)
  *
  */
-    httpUnsafeOrigin: `http://localhost:${process.env.port}`,
+    httpUnsafeOrigin: `http://localhost:${process.env.PORT}`,
 
 /*  httpSafeOrigin is the URL that is used for the 'sandbox' described above.
  *  If you're testing or developing with CryptPad on your local machine then
@@ -83,7 +83,7 @@ module.exports = {
  *  which will proxy websocket traffic to your node server.
  *
  */
-    httpPort: process.env.port,
+    httpPort: process.env.PORT,
 
 /*  httpSafePort allows you to specify an alternative port from which
  *  the node process should serve sandboxed assets. The default value is
